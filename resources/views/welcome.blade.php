@@ -185,7 +185,22 @@
         }
 
         .table {
-            margin: 0 0 20px 0;
+            margin: 20px 0;
+        }
+
+        h2 {
+            margin: 20px 0;
+        }
+
+        h3 {
+            margin: 20px 0;
+        }
+
+        .score {
+            font-size: 28px;
+            border-top: 1px solid #E9E9E9;
+            padding: 20px 0 0 0;
+            margin: 20px 0 0 0;
         }
     </style>
 
@@ -228,6 +243,40 @@
 
                 <h3>Deployment Setup</h3>
                 <p>Easy, so long as the server is properly configured it's a breeze, supports Capistrano, Heroku, custom script...</p>
+
+                <h3>Notes</h3>
+                <ul>
+                    <li>Notifications of build statuses inbuilt, e.g. Slack, email, github, etc...</li>
+                    <li>Had a 500 error on setup at one point after getting quite far, however issue was solved within
+                        15 minutes, support were very responsive</li>
+                    <li>This does highlight a very important point, If our own hosted solution were to break down, it
+                        would bring us grinding to a halt in terms of deployment in addition, this shows the benefit of
+                        ofsetting the risk to a third party, they will be the ones that investigate and fix any issues
+                        with their platform, so there may be downtime, but this would exist with our own platform too,
+                        except, downtime on a platform we maintain ourselves, will be costing us more due to having to
+                        get engineers on the path to resolving issues.</li>
+                </ul>
+
+                <h3>Pros</h3>
+
+                <ul>
+                    <li>Fast to setup</li>
+                    <li>Easy to use</li>
+                    <li>Easy setup end to end with project pipelines baked in</li>
+                    <li>Most of the work for setting up environments is done already by Codeship</li>
+                    <li>Ability to run builds in parralel no need for additional maintenance of more servers</li>
+                    <li>Used by some top companies, so very stable to use</li>
+                </ul>
+
+                <h3>Cons</h3>
+
+                <ul>
+                    <li>IF, the guys in Manchester want to use Codeship, there is the cost of migrating </li>
+                </ul>
+
+                <div class="score">
+                    <strong>Rating</strong> 7/10
+                </div>
 
             </div><!-- /.blog-post -->
 
