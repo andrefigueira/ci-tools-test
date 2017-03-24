@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>CI Tools Evaluation</title>
+    <title>CI Tools Evaluation - By Andre</title>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -266,7 +266,7 @@
                     <li>Most of the work for setting up environments is done already by Codeship</li>
                     <li>Ability to run builds in parralel no need for additional maintenance of more servers</li>
                     <li>Used by some top companies, so very stable to use</li>
-                    <li>Supports Capistrano</li>
+                    <li>Supports Capistrano :)</li>
                 </ul>
 
                 <h3>Cons</h3>
