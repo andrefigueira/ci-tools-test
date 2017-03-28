@@ -281,6 +281,67 @@
 
             </div><!-- /.blog-post -->
 
+            <div class="blog-post">
+                <h2 class="blog-post-title">Bamboo</h2>
+
+                <table class="table table-bordered">
+                    <tr>
+                        <th>Time to setup</th>
+                        <td>Incomplete</td>
+                    </tr>
+                    <tr>
+                        <th>Difficulty</th>
+                        <td>Medium</td>
+                    </tr>
+                </table>
+
+                <h3>Maintenance</h3>
+                <p>Moderate, we will need to maintain an infrastructure for it as Bamboo cloud has been discontinued. In addition
+                A full PHP environment for running our builds will need to be configured as there is none by default and there
+                aren't any relevant plugins on the Atlassian marketplace which would conform to our needs.</p>
+
+                <h3>Deployment Setup</h3>
+                <p>Moderate, I setup locally using a prebuilt docker image, but can be setup as the install in provided as a
+                tarball, then you just run the installation and install the licence key. In addition to the server setup there
+                are also Runner Agents that need to be maintained, these are smaller servers with the job of actually running
+                the "Plans" (Builds), these are leased from Atlassian at a cost, the starting cost for 1 agent is $800 per month.</p>
+
+                <h3>Notes</h3>
+                <ul>
+                    <li>Notifications of build statuses inbuilt, e.g. Slack, email, github, etc...</li>
+                    <li>Had a few issues in configuring the build server to setup for PHP as it's not configured out of the box to handle
+                    PHP system builds</li>
+                    <li>Maintenance costs are sold in 12 month periods, with the first 12 months free</li>
+                    <li>The cost for agents starts at $800 and increments to 5, at $2,200, topping out at 250 agents for $40,000</li>
+                    <li>We could most likely start with a minimum of 5 agents at a cost of $2,200</li>
+                </ul>
+
+                <h3>Pros</h3>
+
+                <ul>
+                    <li>Feature rich in terms of build reporting</li>
+                    <li>Good setup for pipelines of tasks to run as part of a build</li>
+                    <li>Many plugins available in Atlassian marketplace which can be easily installed</li>
+                    <li>Used by some top companies, so very stable to use</li>
+                </ul>
+
+                <h3>Cons</h3>
+
+                <ul>
+                    <li>IF, the guys in Manchester want to use Bamboo, there is the cost of migrating</li>
+                    <li>Bamboo cloud is no longer available, so means maintaining a Bamboo instance ourselves</li>
+                    <li>PHP workflow not inbuilt so needs to be done by us</li>
+                    <li>Jira is relativley expensive compared to other solutions</li>
+                    <li>Plugins are expensive and not maintained by Atlassian themselves</li>
+                    <li>Remote agents are very expensive and the costs do not scale appropriatley</li>
+                </ul>
+
+                <div class="score">
+                    <strong>Rating</strong> 6/10
+                </div>
+
+            </div><!-- /.blog-post -->
+
         </div><!-- /.blog-main -->
 
     </div><!-- /.row -->
