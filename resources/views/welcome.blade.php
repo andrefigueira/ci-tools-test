@@ -280,6 +280,62 @@
 
             </div><!-- /.blog-post -->
 
+            <div class="blog-post">
+                <h2 class="blog-post-title">Bamboo</h2>
+
+                <table class="table table-bordered">
+                    <tr>
+                        <th>Time to setup</th>
+                        <td>1 hour 30 minutes</td>
+                    </tr>
+                    <tr>
+                        <th>Difficulty</th>
+                        <td>Medium</td>
+                    </tr>
+                </table>
+
+                <h3>Maintenance</h3>
+                <p>Medium, will need to manage full pipelines in the web app, a lot of different configurations need to be tied together</p>
+
+                <h3>Deployment Setup</h3>
+                <p>Easy, so long as the server is properly configured it's a breeze, supports Capistrano, Heroku, custom script...</p>
+
+                <h3>Notes</h3>
+                <ul>
+                    <li>Notifications of build statuses inbuilt, e.g. Slack, email, github, etc...</li>
+                    <li>Had a 500 error on setup at one point after getting quite far, however issue was solved within
+                        15 minutes, support were very responsive</li>
+                    <li>This does highlight a very important point, If our own hosted solution were to break down, it
+                        would bring us grinding to a halt in terms of deployment in addition, this shows the benefit of
+                        ofsetting the risk to a third party, they will be the ones that investigate and fix any issues
+                        with their platform, so there may be downtime, but this would exist with our own platform too,
+                        except, downtime on a platform we maintain ourselves, will be costing us more due to having to
+                        get engineers on the path to resolving issues.</li>
+                </ul>
+
+                <h3>Pros</h3>
+
+                <ul>
+                    <li>Fast to setup</li>
+                    <li>Easy to use</li>
+                    <li>Easy setup end to end with project pipelines baked in</li>
+                    <li>Most of the work for setting up environments is done already by Codeship</li>
+                    <li>Ability to run builds in parralel no need for additional maintenance of more servers</li>
+                    <li>Used by some top companies, so very stable to use</li>
+                </ul>
+
+                <h3>Cons</h3>
+
+                <ul>
+                    <li>IF, the guys in Manchester want to use Codeship, there is the cost of migrating </li>
+                </ul>
+
+                <div class="score">
+                    <strong>Rating</strong> 7/10
+                </div>
+
+            </div><!-- /.blog-post -->
+
         </div><!-- /.blog-main -->
 
     </div><!-- /.row -->
