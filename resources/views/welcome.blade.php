@@ -341,6 +341,59 @@
                 </div>
 
             </div><!-- /.blog-post -->
+            
+            <div class="blog-post">
+                <h2 class="blog-post-title">Jenkins</h2>
+
+                <table class="table table-bordered">
+                    <tr>
+                        <th>Time to setup</th>
+                        <td>Incomplete</td>
+                    </tr>
+                    <tr>
+                        <th>Difficulty</th>
+                        <td>Medium</td>
+                    </tr>
+                </table>
+
+                <h3>Maintenance</h3>
+                <p>Moderate, we will need to maintain an infrastructure for it as Jenkins is usually self-hosted, however there are some cloud solutions available. In addition
+                A full PHP environment for running our builds will need to be configured as there is none by default which fit with the kind of flows we need for our PHP applications, so this would need to be configured.</p>
+
+                <h3>Deployment Setup</h3>
+                <p>Moderate, I setup locally using a prebuilt docker image, but can be setup as the install in provided as a
+                tarball, then you just run the installation. Then I had to get a few commands built in the pipelines format to allow for my tests to run.</p>
+
+                <h3>Notes</h3>
+                <ul>
+                    <li>Notifications of build statuses inbuilt, e.g. Slack, email, github, etc...</li>
+                    <li>Able to just script with passthru commands, so anything which isn't available as a plugin can be created and used.</li>
+                    <li>We would need to make sure that all Jenkins servers are able to run the amount of tasks we wish to run</li>
+                    <li>We would require our Jenkins to be able to talk to Github and have full access so we can make use of Github QA hooks</li>
+                </ul>
+
+                <h3>Pros</h3>
+
+                <ul>
+                    <li>Feature rich in terms of build reporting</li>
+                    <li>Good setup for pipelines of tasks to run as part of a build</li>
+                    <li>Many plugins available in the Jenkins market place</li>
+                    <li>Used by some top companies, so very stable to use so long as we keep it up to date</li>
+                    <li>Manchester are already using so, minimal cost</li>
+                </ul>
+
+                <h3>Cons</h3>
+
+                <ul>
+                    <li>Needs to be fully configured once deployed for specific tasks</li>
+                    <li>No inbuilt PHP workflows, so would have to be setup</li>
+                </ul>
+
+                <div class="score">
+                    <strong>Rating</strong> 7/10
+                </div>
+
+            </div><!-- /.blog-post -->
 
         </div><!-- /.blog-main -->
 
